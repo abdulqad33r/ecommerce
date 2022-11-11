@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Hero_Footer from "./Components/Hero_Footer";
 import Slug from "./Components/Slug";
 import { useStateContext } from "./Components/Context/StateContext";
+import { Navigate } from "react-router";
 
 function App() {
   const [banner, setBanner] = useState([]);
@@ -44,7 +45,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/"
+          path="/ecommerce"
           element={
             <Hero_Footer
               banner={banner.length && banner[0]}
@@ -54,7 +55,7 @@ function App() {
         />
         <Route path="/product/:mySlug" element={<Slug products={products} />} />
 
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/ecommerce" replace />} />
       </Routes>
     </div>
   );
