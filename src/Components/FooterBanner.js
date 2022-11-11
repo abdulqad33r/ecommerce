@@ -36,7 +36,7 @@ const FooterBanner = ({
           <p className="footer-largeText1">{product}</p>
           <p className="description">{desc}</p>
 
-          <Link to="/product/wireless-headphones2">
+          <Link to="/ecommerce/product/wireless-headphones2">
             <button className="footerBanner-btn">{buttonText}</button>
           </Link>
         </div>

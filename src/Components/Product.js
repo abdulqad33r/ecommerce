@@ -8,7 +8,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
   const { mySlug } = useParams();
 
   return (
-    <Link to={`/product/${slug?.current}`}>
+    <Link to={`/ecommerce/product/${slug?.current}`}>
       <div
         className="product-card"
         onClick={() => mySlug !== slug?.current && setQty(1)}

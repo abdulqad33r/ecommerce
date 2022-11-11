@@ -10,7 +10,7 @@ const HeroBanner = ({ banner }) => {
         <p className="mid-text">{banner.midText}</p>
         <p className="large-text">{banner.largeText1}</p>
         <div>
-          <Link to={`/product/wireless-headphones2`}>
+          <Link to={`/ecommerce/product/wireless-headphones2`}>
             <button className="banner-btn">{banner.buttonText}</button>
           </Link>
         </div>
