@@ -53,7 +53,10 @@ function App() {
             />
           }
         />
-        <Route path="/product/:mySlug" element={<Slug products={products} />} />
+        <Route
+          path="/ecommerce/product/:mySlug"
+          element={<Slug products={products} />}
+        />
 
         <Route path="*" element={<Navigate to="/ecommerce" replace />} />
       </Routes>
