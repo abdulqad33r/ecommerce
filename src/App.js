@@ -53,6 +53,8 @@ function App() {
           }
         />
         <Route path="/product/:mySlug" element={<Slug products={products} />} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   );
