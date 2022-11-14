@@ -5,6 +5,7 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   color: #2e4053;
+  width: 100vw;
   overflow-x: hidden;
 }
 a {
@@ -547,7 +548,7 @@ a {
     bottom: -5px;
   }
   .footer-banner {
-    width: 100vh;
+    width: 100vw;
     margin-top: 2rem;
     border-radius: 0;
     overflow: hidden;
